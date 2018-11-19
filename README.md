@@ -31,5 +31,25 @@ The dataset was taken from the Open Images dataset available [here](https://stor
   2.  https://storage.googleapis.com/openimages/2018_04/class-descriptions-boxable.csv
   3.  https://storage.googleapis.com/openimages/2018_04/train/train-annotations-human-imagelabels-boxable.csv
   
+  #### Image files from source site using Amazon Web Services Download
+  
+  Use the below command to download the relevant image files to your directory after installing [awscli](https://aws.amazon.com/cli/). 
+  
+  	aws s3 --no-sign-request sync s3://open-images-dataset/train [target_dir/train]
+  
+  #### Miscellaneous Additional Asset files
+  
+  The below supporting files may be downloaded from [here](https://www.dropbox.com/sh/yr0tkw0jgbefia9/AABqb6iTJUjyD7bgBrTKg2u4a?dl=0).
+  
+  1.  extracts_train.pkl  --Pickled file of feature and label extraction for VGG16 model
+  2.  extracts_x_train.pkl  --Pickled file of feature and label extraction for first Xception model 
+  3.  extracts_xC.pkl  --Pickled file of feature and label extraction for final Xception model 
+  4.  history.pkl  --Pickled file of training history for VGG16 model 
+  5.  hist_x.pkl  --Pickled file of training history for first Xception model
+  6.  hist_XC.pkl --Pickled file of training history for final Xception model
+  7.  im_test_XC.joblib  --Joblib file of test images and labels
+  8.  new_model_1.h5 --HDF5 file of trained VGG16 model
+  9.  new_model_x.h5 --HDF5 file of trained first Xception model
+  10. new_model_xC.h5 --HDF5 file of trained final Xception model
   
 
