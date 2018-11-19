@@ -2,11 +2,7 @@
 
 ### The Problem
 
-Can we utilize machine learning to correctly identify images by training on pre-labeled images that were previously labeled by a different machine?  In other words, can machines teach machines to recognize images?  
-
-### The Client
-
-This topic would be of interest to robotics firms to assist in robotic navigation, to law enforcement agencies (to assist in the facial recognition of suspects) or to intelligence agencies (to aid in recognizing targets of interest in aerial reconnaissance photographs).  If successful, it may obviate or reduce the need to have large numbers of human beings pre-label images in every case.  Instead, a client could save money if image recognition training could always be done based on pre-labeled images done by machines that were in turn trained by other machines that were ultimately trained on only one or two human pre-labeling sessions long ago.  
+Can we utilize machine learning to correctly identify images by training on pre-labeled images that were previously labeled by a different machine?  In other words, can machines teach machines to recognize images?   
 	
 ### The Data
 
@@ -14,10 +10,14 @@ The dataset was taken from the Open Images dataset available [here](https://stor
 
 ### The Approach
 
-1.	Data wrangling and cleaning—First I determined which of the machine-learned labels and id’s in the training set correspond to the training labels and id’s for the image subset given and narrowed the training set down to only those labels and id’s.  (The machine learned training set was taken from all 9,178,275 images, while the images used here will be from a more manageable subset.)  I also made certain that I narrowed the set further to only those labels that were identified with certainty by a human observer as confirmation in addition to the machine's estimate/assignment of the label so as not to introduce too much uncertainty into the present model.    
+1.	Data wrangling and cleaning—First I determined which of the machine-learned labels and id’s in the training set corresponded to the training labels and id’s for the image subset given and narrowed the training set down to only those labels and id’s.  (The machine learned training set was taken from all 9,178,275 images, while the images used here were from the more manageable subset.)  I also made certain that I narrowed the set further to only those labels that were identified with certainty by a human observer as confirmation in addition to the machine's estimate/assignment of the label so as not to introduce too much uncertainty into the present model.    
 2.	Exploratory Data Analysis—Here, I briefly analyzed relationships among the variables in the dataset using both statistical functions and graphical analyses. This primarily involved an analysis of the frequencies and types of labels present in the dataset, as these were the variables most amenable to analysis.
 3.	Machine Learning—I then built a deep learning model using a convolutional neural network to identify the images.  The object was to determine whether and to what extent one deep learning model may accurately recognize images that have been labeled by a different machine and to see how confident both machines were in the identification.
 4.	Final Report—Attached, I have provided a detailed report describing the procedure I used and the findings I obtained therefrom, including appropriate data visualizations.  Accompanying this report is a slide deck providing a high level summary. 
+
+### Results
+
+The final model, based on an Xception model, achieved high levels of accuracy, overall precision and recall scores. The true accuracy is likely even higher than indicated by the scores due to the presence of some false errors, in part resulting from some labels being synonyms of one another. The present model also largely agreed with the predecessor model that predicted the ground-truth labels for each image initially.  Thus, it was shown here that a machine can be trained to accurately recognize pre-labeled images that were previously classified by a different machine that likely utilized a different model.
 
 ### Contents
 
