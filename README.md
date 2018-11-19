@@ -41,15 +41,16 @@ The dataset was taken from the Open Images dataset available [here](https://stor
   
   The below supporting files may be downloaded from [here](https://www.dropbox.com/sh/yr0tkw0jgbefia9/AABqb6iTJUjyD7bgBrTKg2u4a?dl=0).
   
-  1.  extracts_train.pkl  --Pickled file of feature and label extraction for VGG16 model
-  2.  extracts_x_train.pkl  --Pickled file of feature and label extraction for first Xception model 
-  3.  extracts_xC.pkl  --Pickled file of feature and label extraction for final Xception model 
-  4.  history.pkl  --Pickled file of training history for VGG16 model 
-  5.  hist_x.pkl  --Pickled file of training history for first Xception model
-  6.  hist_XC.pkl --Pickled file of training history for final Xception model
-  7.  im_test_XC.joblib  --Joblib file of test images and labels
-  8.  new_model_1.h5 --HDF5 file of trained VGG16 model
-  9.  new_model_x.h5 --HDF5 file of trained first Xception model
-  10. new_model_xC.h5 --HDF5 file of trained final Xception model
+  1.  label_train_merge.pkl --Pickled file of cleaned and merged dataset
+  2.  extracts_train.pkl  --Pickled file of feature and label extraction for VGG16 model
+  3.  extracts_x_train.pkl  --Pickled file of feature and label extraction for first Xception model 
+  4.  extracts_xC.pkl  --Pickled file of feature and label extraction for final Xception model 
+  5.  history.pkl  --Pickled file of training history for VGG16 model 
+  6.  hist_x.pkl  --Pickled file of training history for first Xception model
+  7.  hist_XC.pkl --Pickled file of training history for final Xception model
+  8.  im_test_XC.joblib  --Joblib file of test images and labels
+  9.  new_model_1.h5 --HDF5 file of trained VGG16 model
+  10.  new_model_x.h5 --HDF5 file of trained first Xception model
+  11. new_model_xC.h5 --HDF5 file of trained final Xception model
   
 
